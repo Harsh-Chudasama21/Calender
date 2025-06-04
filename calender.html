@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="calender.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Calendar</h1>
+        </header>
+        
+        <main class="">
+            <form class="container event-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <input type="text" id="sd" placeholder="Starting Date" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="ed" placeholder="Ending Date" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="st" placeholder="Starting Time" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="et" placeholder="Ending Time" value="">
+                    </div>
+                    <div class="form-group full-width">
+                        <input type="text" id="content" placeholder="Event name" value="">
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="button" onclick="area()" class="submit-btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="calendar" class="calendar-container"></div>
+        </main>
+    </div>
+    <script type="text/javascript" src="./calender_app.js"></script>
+</body>
+</html>
